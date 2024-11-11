@@ -38,7 +38,6 @@
     numbering("1.1", counter(heading).get().first(), num)
   )
 
-  show: fix-indent()
-
+  
   body
 }

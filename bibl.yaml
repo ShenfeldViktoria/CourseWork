@@ -1,1 +1,19 @@
+FactroyMethodYouTube:
+    type: Web
+    title: Паттерн Factory Method на Python - Ютуб
+    url: https://www.youtube.com/watch?v=Ni26lYMVM6k\
+    
+FactroyMethodSite:
+    type: Web
+    title: Паттерн Factory Method на Python - Сайт
+    url: https://refactoring.guru/design-patterns/factory-method/python/example/
 
+FactroyMethodDesign:
+    type: Web
+    title: Factory Method Design 
+    url: https://sourcemaking.com/design_patterns/factory_method/
+
+FactroyMethodShablone:
+    type: Web
+    title: Factroy Method шаблон
+    url: https://proglib.io/p/factory-method-python

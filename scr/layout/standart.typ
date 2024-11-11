@@ -64,7 +64,6 @@
     display-icon: false,
   )
 
-  show: fix-indent()
 
   body
 }

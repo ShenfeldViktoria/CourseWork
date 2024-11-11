@@ -1,8 +1,8 @@
+#import "@preview/indenta:0.0.3": fix-indent
 #import "../utils.typ": unindented, institution, city_and_year
 #import "course-work.typ": *
 
 #let project(
-  start_label: <start>,
   student_name: none,
   student_name_genitive: none,
   group: none,
@@ -23,6 +23,7 @@
   commission_members: none,
   calendar_plan_data: (),
   initial_data: (),
+  abstract: none,
   body
 ) = {
 
@@ -92,9 +93,14 @@
     ]
   ]
 
-    page(numbering: none)[
-      #heading(numbering: none)[РЕФЕРАТ]
-Пояснювальна записка до курсової роботи: 26 с., 2 рис., 2 додатки,
+  // Abstract
+  page(numbering: none)[
+    #set par(first-line-indent: 1.25cm)
+    #show: fix-indent(unsafe: true)
+
+    #heading(outlined: false, numbering: none)[РЕФЕРАТ]
+    #abstract
+    Пояснювальна записка до курсової роботи: 29 с., 2 рис., 2 додатки,
 4 джерел інформації.\
 
 Об’єкт розробки — патерн проєктування Factory Method.\
@@ -113,11 +119,14 @@
 \
 
 FACTORY METHOD, VISUAL STUDIO CODE, WINDOWS, ФАБРИЧНИЙ МЕТОД, PYTHON, ПАТЕРН ПРОЕКТУВАННЯ
-
   ]
+
   page(numbering: none)[
     #outline(indent: 1.25em)
   ]
+
+  body
+}
 
 
   body
